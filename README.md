@@ -20,6 +20,8 @@ Dependencies
   * Eigen (http://eigen.tuxfamily.org/): Version 3.2 or above. It's a header-only 
     library, so just extract Eigen to the solution directory and it should compile. 
     Alternatively, set it up in one of your default include directories.
+  * gflags (https://github.com/gflags/gflags) Clone into folder `ceres-windows`.
+  * glog (http://www.github.com/google/glog) Clone into folder `ceres-windows`.
 
 Libraries
 =========
@@ -28,6 +30,10 @@ Libraries
 
   * Google glog: http://www.github.com/google/glog
 
+Bug Fixes
+=======
+1. 'j0': The POSIX name for this item is deprecated
+> fix the error by adding _CRT_NONSTDC_NO_DEPRECATE to the preprocessor definitions.
 
 License
 =======
